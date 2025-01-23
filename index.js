@@ -3,7 +3,7 @@ import express from "express"
 const app = express()
 const port = 3000
 
-app.use("/api/v1/login", (req,res) =>{
+app.get("/api/v1/auth/login", (req,res) =>{
     res.send('berhasil login')
 });
 
